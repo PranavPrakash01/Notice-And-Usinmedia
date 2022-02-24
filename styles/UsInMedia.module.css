@@ -1,0 +1,154 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-self: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 5rem;
+}
+.title{
+    display: flex;
+    position: relative;
+    align-self: center;
+    color: #123C69;
+    margin-bottom: -2rem;
+
+}
+.viewAll{
+    position: relative;
+    margin-left: 90%;
+    font-size: 1.5rem;
+    color: #123C69;
+    text-shadow: 1px 1px 5px grey;
+}
+.cardsContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    position: relative;
+   
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    position: relative; 
+    border-radius: 7px;
+    margin: 2rem;
+    width: 20rem;
+    height: 30rem;
+    padding: 1rem;
+    box-shadow: 0 3px 20px rgb(0 0 0 / 0.2);
+}
+.image{
+    display: flex;
+    position: relative;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 5px;
+}
+
+.newsTitle{
+    display: flex;
+    position: relative;
+    align-self: center;
+    color: #123C69;
+    font-size: 1.25rem;
+    max-height: 4.5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.newsSource{
+    display: flex;
+    position: relative;
+    position: absolute;
+    top: 24rem;
+    color: #123C69;
+    font-size: 1rem;
+}
+.publishDate{
+    display: flex;
+    position: relative;
+    position: absolute;
+    top: 26rem;
+    color: #123C69;
+    font-size: 1rem;
+    font-weight: normal;
+}
+.button{
+    position: relative;
+    position: absolute;
+    border-radius: 5px;
+    width: fit-content;
+    top: 27rem;
+    left: 12.5rem;
+    padding: 0.5rem;
+    font-size: 0.75rem;
+    border-color: #d4d4d4;
+    border-width: 1px;
+    background-color: white;
+}
+.button:hover{
+    background-color: #EDF4FF;
+}
+@media screen and (max-width:1250px){
+    .container{
+        width: 92.5%;
+        margin-bottom: 5rem;
+    }
+    .title{
+        margin-bottom: 0rem;
+        font-size: 1.75rem;
+    
+    }
+    .viewAll{
+        visibility: hidden;
+        display: none;
+        
+    }
+    .cardsContainer{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        position: relative;
+        overflow: scroll;
+       
+    }
+    .card{
+        margin: 1rem;
+        width: 15rem;
+        height: 22rem;
+        padding: 1rem;
+    }
+    .image{
+        width: 12rem;
+        height: 12rem;
+    }
+    .newsTitle{
+        font-size: 1rem;
+    }
+    .newsSource{
+       
+        top: 18rem;
+        color: #123C69;
+        font-size: 0.75rem;
+    }
+    .publishDate{
+        
+        top: 19rem;
+        color: #123C69;
+        font-size: 0.75rem;
+        font-weight: normal;
+    }
+    .button{
+        top: 19rem;
+        left: 9rem;
+        padding: 0.4rem;
+        font-size: 0.5rem;
+    }
+
+
+}
